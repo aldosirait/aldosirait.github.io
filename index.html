@@ -15,27 +15,32 @@
         <div class="logo">&lt;DEV/&gt;</div>
         <div style="display: flex; gap: 30px; align-items: center;">
             <div class="nav-links">
-                <a href="#about" data-lang="nav.about">Tentang</a>
-                <a href="#skills" data-lang="nav.skills">Keahlian</a>
-                <a href="#projects" data-lang="nav.projects">Proyek</a>
-                <a href="#contact" data-lang="nav.contact">Kontak</a>
+                <a href="#about" data-lang="nav.about" onclick="closeMenu()">Tentang</a>
+                <a href="#skills" data-lang="nav.skills" onclick="closeMenu()">Keahlian</a>
+                <a href="#projects" data-lang="nav.projects" onclick="closeMenu()">Proyek</a>
+                <a href="#contact" data-lang="nav.contact" onclick="closeMenu()">Kontak</a>
             </div>
             <div class="lang-switcher">
                 <button class="lang-btn" onclick="switchLang('id')" id="btn-id">ID</button>
                 <button class="lang-btn" onclick="switchLang('en')" id="btn-en">EN</button>
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <section class="hero">
-        <h1 class="glitch" data-lang="hero.title">JOHN DEVELOPER</h1>
+        <h1 class="glitch" data-lang="hero.title">ALDO ALFREDO SIRAIT</h1>
         <p class="subtitle" data-lang="hero.subtitle">
-            Full Stack Developer<span class="cursor"></span>
+            Software Developer<span class="cursor"></span>
         </p>
     </section>
 
     <section id="about">
-        <h2 data-lang="about.title">Tentang Saya</h2>
+        <!-- <h2 data-lang="about.title">Tentang Saya</h2> -->
         <div class="about-content">
             <div class="profile-img">
                 <img src="./images/profile.jpeg" alt="Foto Profil Aldo">
@@ -78,120 +83,169 @@
     <section id="projects">
         <h2 data-lang="projects.title">Proyek</h2>
         <div class="projects">
+
+            <!-- Waiting List Outlet -->
             <div class="project-card">
-                <div class="project-img">🛒</div>
+                <div class="project-img">
+                    <img src="./images/waiting-list.jpeg" alt="Waiting List System">
+                </div>
                 <div class="project-content">
-                    <h3 data-lang="projects.items.ecommerce.title">Platform E-Commerce</h3>
-                    <p data-lang="projects.items.ecommerce.description">
-                        Platform e-commerce lengkap dengan sistem pembayaran, manajemen inventory, dan dashboard admin
-                        yang powerful.
+                    <h3 data-lang="projects.items.waiting_list_outlet.title">Sistem Waiting List Outlet</h3>
+                    <p data-lang="projects.items.waiting_list_outlet.description">
+                        Sistem antrian berbasis Windows dan Android yang digunakan di beberapa outlet restoran.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
 
+            <!-- Recruitment -->
             <div class="project-card">
-                <div class="project-img">✓</div>
+                <div class="project-img">
+                    <img src="./images/recruitment.jpg" alt="Recruitment System">
+                </div>
                 <div class="project-content">
-                    <h3 data-lang="projects.items.task_management.title">Aplikasi Manajemen Tugas</h3>
-                    <p data-lang="projects.items.task_management.description">
-                        Aplikasi manajemen tugas dengan fitur kolaborasi real-time, notifikasi, dan integrasi kalender.
+                    <h3 data-lang="projects.items.recruitment_bisagroup.title">Sistem Recruitment Bisagroup</h3>
+                    <p data-lang="projects.items.recruitment_bisagroup.description">
+                        Sistem rekrutmen berbasis web dengan backend Laravel dan export PDF.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
 
+            <!-- Pickup -->
             <div class="project-card">
-                <div class="project-img">📝</div>
+                <div class="project-img">
+                    <img src="./images/pickup.jpeg" alt="Pickup Waiting List">
+                </div>
                 <div class="project-content">
-                    <h3 data-lang="projects.items.portfolio_cms.title">Portfolio CMS</h3>
-                    <p data-lang="projects.items.portfolio_cms.description">
-                        Content Management System untuk portfolio dengan drag-and-drop builder dan multiple themes.
+                    <h3 data-lang="projects.items.pickup_waiting_list.title">Sistem Pickup Waiting List</h3>
+                    <p data-lang="projects.items.pickup_waiting_list.description">
+                        Sistem Windows untuk mencatat dan memanggil pesanan pickup.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
 
+            <!-- Voucher -->
             <div class="project-card">
-                <div class="project-img">🤖</div>
+                <div class="project-img">
+                    <img src="./images/voucher.jpg" alt="Voucher System">
+                </div>
                 <div class="project-content">
-                    <h3 data-lang="projects.items.ai_chatbot.title">AI Chat Bot</h3>
-                    <p data-lang="projects.items.ai_chatbot.description">
-                        Chatbot berbasis AI untuk customer service dengan natural language processing dan machine
-                        learning.
+                    <h3 data-lang="projects.items.voucher_system.title">Pengembangan Sistem Voucher</h3>
+                    <p data-lang="projects.items.voucher_system.description">
+                        Penambahan fitur bulk approve dan bulk reject.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
 
+            <!-- Helpdesk -->
             <div class="project-card">
-                <div class="project-img">💪</div>
+                <div class="project-img">
+                    <img src="./images/helpdesk.jpeg" alt="Helpdesk System">
+                </div>
                 <div class="project-content">
-                    <h3 data-lang="projects.items.fitness_app.title">Aplikasi Fitness Tracking</h3>
-                    <p data-lang="projects.items.fitness_app.description">
-                        Aplikasi mobile untuk tracking workout, nutrition, dan progress dengan analytics dan social
-                        features.
+                    <h3 data-lang="projects.items.helpdesk_system.title">Pengembangan Sistem Helpdesk</h3>
+                    <p data-lang="projects.items.helpdesk_system.description">
+                        Penambahan status ticket, dashboard analisis, dan manajemen part.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">Redux</span>
-                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
 
+            <!-- Invoice -->
             <div class="project-card">
-                <div class="project-img">₿</div>
+                <div class="project-img">
+                    <img src="./images/invoice.jpeg" alt="Invoice Exchange">
+                </div>
                 <div class="project-content">
-                    <h3 data-lang="projects.items.blockchain_wallet.title">Blockchain Wallet</h3>
-                    <p data-lang="projects.items.blockchain_wallet.description">
-                        Cryptocurrency wallet dengan multi-chain support, swap features, dan security encryption.
+                    <h3 data-lang="projects.items.invoice_exchange.title">Sistem Tukar Faktur</h3>
+                    <p data-lang="projects.items.invoice_exchange.description">
+                        Export laporan ke Excel dan PDF.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Web3.js</span>
-                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
+
+            <!-- HRIS -->
+            <div class="project-card">
+                <div class="project-img">🏢</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.hris_system.title">Sistem HRIS (On Going)</h3>
+                    <p data-lang="projects.items.hris_system.description">
+                        Backend HRIS internal untuk manajemen karyawan seperti cuti, lembur, pengumuman, OAuth, dan
+                        status pegawai.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Golang</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Google OAuth</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asset -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="./images/asset.jpg" alt="Asset Management">
+                </div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.asset_management.title">Manajemen Asset</h3>
+                    <p data-lang="projects.items.asset_management.description">
+                        Pencatatan dan monitoring masa garansi asset perusahaan.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">CodeIgniter</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graphic Design Book -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="./images/buku.jpeg" alt="Graphic Design Book Development">
+                </div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.graphic_design_book.title">
+                        Buku Desain Grafis: Teori dan Praktek
+                    </h3>
+                    <p data-lang="projects.items.graphic_design_book.description">
+                        Ikut serta dalam pengembangan buku Desain Grafis: Teori dan Praktek menggunakan CorelDRAW X7.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">CorelDRAW X7</span>
+                        <span class="tech-tag">Graphic Design</span>
+                        <span class="tech-tag">Print Layout</span>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-    </section>
-
-    <section id="contact">
-        <h2 data-lang="contact.title">Hubungi Saya</h2>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-            <div class="form-group">
-                <input type="text" placeholder="Nama" id="input-name"
-                    data-lang-placeholder="contact.form.name_placeholder" required>
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Email" id="input-email"
-                    data-lang-placeholder="contact.form.email_placeholder" required>
-            </div>
-            <div class="form-group">
-                <textarea rows="5" placeholder="Pesan" id="input-message"
-                    data-lang-placeholder="contact.form.message_placeholder" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn" id="btn-submit" data-lang="contact.form.submit_button">KIRIM
-                PESAN</button>
-        </form>
     </section>
 
     <footer>

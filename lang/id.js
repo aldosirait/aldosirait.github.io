@@ -10,52 +10,65 @@ const id = {
 
     // Hero Section
     hero: {
-        title: 'JOHN DEVELOPER',
-        subtitle: 'Full Stack Developer'
+        title: 'ALDO ALFREDO SIRAIT',
+        subtitle: 'Software Developer'
     },
 
     // About Section
     about: {
         title: 'Tentang Saya',
         description_1: 'Saya adalah seorang software developer dengan pengalaman sekitar 2 tahun yang berfokus pada pengembangan backend. Saya terbiasa menggunakan Go, Laravel, dan CodeIgniter untuk membangun RESTful API yang stabil dan scalable.',
-        description_2: 'Saya senang beradaptasi dengan teknologi baru serta menghadapi tantangan dalam dunia pengembangan software. Saya juga terbiasa mengelola database seperti MySQL dan MariaDB, serta menggunakan Redis untuk meningkatkan performa aplikasi.'
+        description_2: 'Saya senang beradaptasi dengan teknologi baru serta menghadapi tantangan dalam dunia pengembangan software. Saya juga terbiasa mengelola database seperti MySQL dan MariaDB untuk meningkatkan performa aplikasi.'
     },
 
     // Skills Section
     skills: {
-        title: 'Keahlian'
+        title: 'Alat Pengembangan'
     },
 
     // Projects Section
     projects: {
         title: 'Proyek',
         items: {
-            ecommerce: {
-                title: 'Platform E-Commerce',
-                description: 'Platform e-commerce lengkap dengan sistem pembayaran, manajemen inventory, dan dashboard admin yang powerful.'
+            waiting_list_outlet: {
+                title: 'Sistem Waiting List Outlet',
+                description: 'Sistem antrian berbasis Windows dan Android yang digunakan di beberapa outlet restoran seperti Beauty In The Pot Plaza Senayan, Tom Sushi, Sushi Tei, dan Paradise Dynasty.'
             },
-            task_management: {
-                title: 'Aplikasi Manajemen Tugas',
-                description: 'Aplikasi manajemen tugas dengan fitur kolaborasi real-time, notifikasi, dan integrasi kalender.'
+            recruitment_bisagroup: {
+                title: 'Sistem Recruitment Bisagroup',
+                description: 'Sistem rekrutmen berbasis web dengan fokus pada pengembangan backend seperti pembuatan API, fitur export PDF, dan telah digunakan oleh lebih dari 400 user terdaftar.'
             },
-            portfolio_cms: {
-                title: 'Portfolio CMS',
-                description: 'Content Management System untuk portfolio dengan drag-and-drop builder dan multiple themes.'
+            pickup_waiting_list: {
+                title: 'Sistem Pickup Waiting List',
+                description: 'Sistem berbasis Windows yang digunakan untuk mencatat dan memanggil pesanan pickup yang sudah siap.'
             },
-            ai_chatbot: {
-                title: 'AI Chat Bot',
-                description: 'Chatbot berbasis AI untuk customer service dengan natural language processing dan machine learning.'
+            voucher_system: {
+                title: 'Pengembangan Sistem Voucher',
+                description: 'Pengembangan fitur baru pada sistem voucher berbasis web berupa bulk approve dan bulk reject untuk permintaan voucher.'
             },
-            fitness_app: {
-                title: 'Aplikasi Fitness Tracking',
-                description: 'Aplikasi mobile untuk tracking workout, nutrition, dan progress dengan analytics dan social features.'
+            helpdesk_system: {
+                title: 'Pengembangan Sistem Helpdesk',
+                description: 'Pengembangan fitur pada sistem helpdesk seperti penambahan status waiting for vendor, waiting for part, resolved sebelum finish, dashboard analisis timeline, dan manajemen part.'
             },
-            blockchain_wallet: {
-                title: 'Blockchain Wallet',
-                description: 'Cryptocurrency wallet dengan multi-chain support, swap features, dan security encryption.'
+            invoice_exchange: {
+                title: 'Sistem Tukar Faktur',
+                description: 'Pengembangan fitur pada website existing agar laporan dapat di-export ke dalam format Excel dan PDF.'
+            },
+            hris_system: {
+                title: 'Sistem HRIS (On Going)',
+                description: 'Pengembangan backend sistem HRIS internal untuk manajemen karyawan seperti permintaan lembur, pengumuman, cuti, integrasi Google OAuth, dan perubahan status pegawai.'
+            },
+            asset_management: {
+                title: 'Manajemen Asset',
+                description: 'Pengembangan sistem inventory asset untuk mencatat dan memantau masa garansi asset perusahaan.'
+            },
+            graphic_design_book: {
+                title: 'Buku Desain Grafis: Teori dan Praktek',
+                description: 'Ikut serta dalam pengembangan buku Desain Grafis: Teori dan Praktek dengan menggunakan CorelDRAW X7.'
             }
         }
     },
+
 
     // Contact Section
     contact: {
