@@ -3,7 +3,7 @@ const en = {
     // Navigation
     nav: {
         about: 'About',
-        skills: 'Skills',
+        skills: 'Tools',
         projects: 'Projects',
         contact: 'Contact'
     },

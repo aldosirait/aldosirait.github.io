@@ -3,7 +3,7 @@ const id = {
     // Navigation
     nav: {
         about: 'Tentang',
-        skills: 'Keahlian',
+        skills: 'Alat Pengembangan',
         projects: 'Proyek',
         contact: 'Kontak'
     },
