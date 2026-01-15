@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+
+    <nav>
+        <div class="logo">&lt;DEV/&gt;</div>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <div class="nav-links">
+                <a href="#about" data-lang="nav.about">Tentang</a>
+                <a href="#skills" data-lang="nav.skills">Keahlian</a>
+                <a href="#projects" data-lang="nav.projects">Proyek</a>
+                <a href="#contact" data-lang="nav.contact">Kontak</a>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="switchLang('id')" id="btn-id">ID</button>
+                <button class="lang-btn" onclick="switchLang('en')" id="btn-en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1 class="glitch" data-lang="hero.title">JOHN DEVELOPER</h1>
+        <p class="subtitle" data-lang="hero.subtitle">
+            Full Stack Developer<span class="cursor"></span>
+        </p>
+    </section>
+
+    <section id="about">
+        <h2 data-lang="about.title">Tentang Saya</h2>
+        <div class="about-content">
+            <div class="profile-img">👨‍💻</div>
+            <div>
+                <p class="about-text" data-lang="about.description_1">
+                    Saya adalah seorang software developer dengan pengalaman sekitar 2 tahun yang berfokus pada pengembangan backend.
+                    Saya terbiasa menggunakan Go, Laravel, dan CodeIgniter untuk membangun RESTful API yang stabil dan scalable.
+                </p>
+                <p class="about-text" data-lang="about.description_2">
+                    Saya senang beradaptasi dengan teknologi baru serta menghadapi tantangan dalam dunia pengembangan software.
+                    Saya juga terbiasa mengelola database seperti MySQL dan MariaDB, serta menggunakan Redis untuk meningkatkan performa aplikasi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 data-lang="skills.title">Keahlian</h2>
+        <div class="skills">
+            <div class="skill-card">Go</div>
+            <div class="skill-card">Laravel</div>
+            <div class="skill-card">CodeIgniter</div>
+            <div class="skill-card">RESTful API</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">MariaDB</div>
+            <div class="skill-card">Redis</div>
+            <div class="skill-card">Flutter</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">Postman</div>
+            <div class="skill-card">Jira</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-lang="projects.title">Proyek</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-img">🛒</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.ecommerce.title">Platform E-Commerce</h3>
+                    <p data-lang="projects.items.ecommerce.description">
+                        Platform e-commerce lengkap dengan sistem pembayaran, manajemen inventory, dan dashboard admin yang powerful.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">✓</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.task_management.title">Aplikasi Manajemen Tugas</h3>
+                    <p data-lang="projects.items.task_management.description">
+                        Aplikasi manajemen tugas dengan fitur kolaborasi real-time, notifikasi, dan integrasi kalender.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Socket.io</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">📝</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.portfolio_cms.title">Portfolio CMS</h3>
+                    <p data-lang="projects.items.portfolio_cms.description">
+                        Content Management System untuk portfolio dengan drag-and-drop builder dan multiple themes.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">🤖</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.ai_chatbot.title">AI Chat Bot</h3>
+                    <p data-lang="projects.items.ai_chatbot.description">
+                        Chatbot berbasis AI untuk customer service dengan natural language processing dan machine learning.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">💪</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.fitness_app.title">Aplikasi Fitness Tracking</h3>
+                    <p data-lang="projects.items.fitness_app.description">
+                        Aplikasi mobile untuk tracking workout, nutrition, dan progress dengan analytics dan social features.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">₿</div>
+                <div class="project-content">
+                    <h3 data-lang="projects.items.blockchain_wallet.title">Blockchain Wallet</h3>
+                    <p data-lang="projects.items.blockchain_wallet.description">
+                        Cryptocurrency wallet dengan multi-chain support, swap features, dan security encryption.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Web3.js</span>
+                        <span class="tech-tag">Ethereum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-lang="contact.title">Hubungi Saya</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <input type="text" placeholder="Nama" id="input-name" data-lang-placeholder="contact.form.name_placeholder" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" id="input-email" data-lang-placeholder="contact.form.email_placeholder" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Pesan" id="input-message" data-lang-placeholder="contact.form.message_placeholder" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="btn-submit" data-lang="contact.form.submit_button">KIRIM PESAN</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span data-lang="footer.copyright">2026 John Developer. All rights reserved.</span></p>
+    </footer>
+
+    <!-- Language Files -->
+    <script src="lang/id.js"></script>
+    <script src="lang/en.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
